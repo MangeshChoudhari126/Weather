@@ -15,8 +15,10 @@ const forecast = (latitude,longitude,callback)=>
         }
         else
         {
+            // console.log(body.current);
             callback(undefined, "The city "+body.location.name+" has a temperature "+
-            body.current.temperature+" degree celcius."
+            body.current.temperature+" degrees out, but it feels like "+ body.current.feelslike+" degrees out."+
+            " The humidity is "+body.current.humidity+"%. Observation time is "+body.current.observation_time
             )
         }
     })
