@@ -79,14 +79,7 @@ geoCode(countryName,(error,{latitude,longitude,location}={})=>
         )
     })
 })
-
-    // response.send({
-    //        forecast : "It is snowing",
-    //        location : request.query.address,
-    //     });
-
-    
-    
+  
 })
 
 app.get('/products',(request,response)=>
